@@ -1,0 +1,324 @@
+/*Global Reset*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	background-color: #000337;
+}
+
+/*--------------------
+Nav Section Start
+---------------------*/
+nav {
+	background-color: #06134A;
+	z-index: 1;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+#navbarNav ul li a {
+	color: #979898;
+}
+
+.btn.ml-5 {
+	border-color: #2875bb;
+	color: #fcb500;
+}
+/*--------------------
+Nav Section End
+---------------------*/
+
+/*--------------------
+Home Section Start
+---------------------*/
+#home {
+	padding-top: 6rem;
+	height: 100vh;
+}
+
+#home h2 {
+	color: #979898;
+	font-weight: 300;
+}
+
+#home h1 {
+	color: #2875bb;
+	font-weight: 800;
+	font-size: 50px;
+}
+
+#home h1 span {
+	color: #fdc500;
+}
+/*--------------------
+Home Section End
+---------------------*/
+
+/*--------------------
+Abour Section Start
+---------------------*/
+#about {
+	height: 100vh;
+}
+
+.photo-me1 {
+	width: 60%;
+}
+
+.about-main-title {
+	color: #fcb500;
+	font-weight: 800;
+	font-size: 60px;
+}
+
+.abaout-main-sub-title {
+	color: #979898;
+	font-size: 24px;
+}
+
+.date-title {
+	color: #979898;
+	font-size: 18px;
+}
+
+.title-2 {
+	color: #2875bb;
+	font-weight: 600;
+}
+
+.sub-title-desc {
+	color: #fdc500;
+}
+
+/*--------------------
+About Section End
+---------------------*/
+
+/*--------------------
+Projects Section Start
+---------------------*/
+#projects {
+	padding-top: 6rem;
+	height: 100vh;
+}
+
+.projects-main-title {
+	color: #fcb500;
+	font-weight: 800;
+	font-size: 60px;
+	text-align: center;
+}
+
+.work-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-gap: 40px;
+	margin-top: 50px;
+}
+
+.work {
+	border-radius: 10px;
+	position: relative;
+	overflow: hidden;
+}
+
+.work img {
+	width: 500px;
+	border-radius: 10px;
+	display: block;
+}
+
+.description {
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(rgba(0,0,0,0.6), #06134a);
+	border-radius: 10px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 40px;
+	text-align: center;
+	font-size: 14px;
+}
+
+.description h3 {
+	font-weight: 500;
+	margin-bottom: 20px;
+	color: #2875bb;
+}
+
+.description p {
+	color: #979898;
+}
+
+.description a {
+	margin-top: 20px;
+	color: #fcb500;
+	text-decoration: none;
+	font-size: 18px;
+	line-height: 60px;
+	background: #06134a;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	text-align: center;
+}
+
+/*---------------------
+Contact Section Start
+-----------------------*/
+#contact {
+	padding-top: 3rem;
+	height: 110vh;
+}
+
+.contact-main-title {
+	color: #fcb500;
+	font-weight: 800;
+	font-size: 60px;
+}
+
+.contact-left {
+	flex-basis: 35%;
+
+}
+
+.contact-right {
+	flex-basis: 60%;
+	
+}
+
+.contact-left p {
+	margin-top: 30px;
+	color: #979898;
+}
+
+.contact-left p i {
+	color: #2875bb;
+	margin-right: 15px;
+	font-size: 25px;
+}
+
+.social-icons {
+	margin-top: 30px;
+}
+
+.social-icons a {
+	text-decoration: none;
+	font-size: 30px;
+	margin-right: 15px;
+	color: #2875bb;
+	display: inline-block;
+}
+
+
+.contact-right form {
+	width: 100%;
+}
+
+form input, form textarea {
+	width: 100%;
+	border: 0;
+	outline: none;
+	background: #06134a;
+	padding: 15px;
+	margin: 15px 0;
+	color: #979898;
+	font-size: 18px;
+	border-radius: 6px;
+
+}
+
+form .btn2 {
+	padding: 14px 60px;
+	font-size: 18px;
+	margin-top: 20px;
+	cursor: pointer;
+}
+
+.btn.btn2 {
+	border-color: #2875bb;
+	color: #fcb500;
+}
+
+.copyright {
+	width: 100%;
+	text-align: center;
+	padding: 25px 0;
+	background: #06134a;
+	font-weight: 300;
+	margin-top: 20px;
+}
+
+.copyright-content {
+	color: #979898;
+}
+
+.copyright-content span {
+	color: #fcb500;
+}
+
+/*For Medium Screens*/
+@media only screen and (max-width: 768px) {
+	#about {
+		height: 100%;
+	}
+
+	#projects {
+		height: 100%;
+	}
+
+	.about-main-title {
+	padding-top: 1rem;
+	color: #2875bb;
+	font-weight: 800;
+	font-size: 60px;
+	text-align: center;
+
+	}
+
+	.abaout-main-sub-title {
+		color: #979898;
+		font-size: 18px;
+		text-align: center;
+		text-justify: center;
+	}
+
+	.title-2 {
+		color: #2875bb;
+		font-weight: 600;
+		text-align: center;
+	}
+
+	.date-title {
+		color: #979898;
+		text-align: center;
+	}
+
+	.sub-title-desc {
+		color: #2875bb;
+		text-align: center;
+	}
+
+	.work-list {
+		align-items: center;
+	}
+
+	.contact-left {
+		align-items: center;
+	}
+}
